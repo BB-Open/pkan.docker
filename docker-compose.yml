@@ -1,0 +1,14 @@
+version: "2.2"
+services:
+  pkan:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pkan/app:latest
+    ports:
+    - 8080:8080
+    volumes:
+    - data:/data
+
+volumes:
+  data:
