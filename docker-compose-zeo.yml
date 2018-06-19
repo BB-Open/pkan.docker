@@ -1,4 +1,4 @@
-version: "2.2"
+version: "3"
 services:
   haproxy:
     image: eeacms/haproxy
@@ -21,7 +21,6 @@ services:
     - zeoserver
     environment:
     - ZEO_ADDRESS=zeoserver:8080
-    scale: "2"
 
   zeoserver:
     build:
